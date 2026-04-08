@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhi Mehta | UX Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">VM<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="mailto:vidhimehta856@gmail.com" class="cta-mini">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero blended-hero">
+        <div class="blended-image-container">
+            <img src="assets/portrait.jpg" alt="Vidhi Mehta" class="blended-pic">
+            <div class="image-gradient-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Vidhi <span class="accent-text">Mehta</span></h1>
+            <p class="subtitle">UI UX Designer | Cybersecurity enthusiast</p>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <span class="tag">About Me</span>
+                <h2>Designing <span class="accent-text">Secure experiences </span>.</h2>
+                <p>
+                    I am a UI/UX Designer and Cybersecurity enthusiast who believes that great design should be as secure as it is beautiful. 
+                    Currently pursuing my B.Tech in Computer Science (AI), I specialize in creating data-driven digital experiences.
+                </p>
+                <p>
+                    My work is grounded in competitive problem-solving—I am the <strong>Winner of Hackidents 2023</strong> (IIT Madras) 
+                    and was selected as a <strong>National Finalist for SIH 2024</strong> and <strong>Pentathon 2025</strong>. 
+                </p>
+                <p>
+                    I am an active contributor to the <strong>GDG</strong> and <strong>Mozilla</strong> communities, 
+                    using my background as a freelancer to shape user-centric products.
+                </p>
+                
+                <div class="contact-links">
+                    <a href="mailto:vidhimehta856@gmail.com">vidhimehta856@gmail.com</a>
+                    <a href="tel:+918839422741">Contact</a>
+                    <a href="https://www.linkedin.com/in/vidhi-mehta-131335204/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            
+            <div class="about-details">
+                <div class="detail-box">
+                    <h4>Technical Toolkit</h4>
+                    <div class="skills-grid">
+                        <span>Figma</span><span>HTML, CSS</span><span>Python</span><span>UI Research</span><span>Prototyping</span>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <h4>Recognition</h4>
+                    <ul>
+                        <li>🏆 Winner: Hackidents 2023</li>
+                        <li>🚀 Finalist: Smart India Hackathon 2024</li>
+                        <li>🛡️ Finalist: Pentathon 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work-grid">
+        <div class="card" onclick="openProject('vreshco')">
+            <div class="card-image" style="background-image: url('assets_vreshco/product page.png');"></div>
+            <div class="card-info"><span class="tag" style="color: #FF4D00;">E-Commerce</span><h3>Vreshco Footwear</h3><p>Premium shopping experience.</p></div>
+        </div>
+        <div class="card" onclick="openProject('cafe')">
+            <div class="card-image" style="background-image: url('assets_cafecruiser/Home.png');"></div>
+            <div class="card-info"><span class="tag" style="color: #00D1FF;">Mobility</span><h3>Cafe Cruiser</h3><p>Urban bike rental service.</p></div>
+        </div>
+        <div class="card" onclick="openProject('invest')">
+            <div class="card-image" style="background-image: url('assets/Screen 1.png');"></div>
+            <div class="card-info"><span class="tag" style="color: #7C4DFF;">Fintech</span><h3>Invest++ Platform</h3><p>Next-gen financial ecosystem.</p></div>
+        </div>
+        <div class="card" onclick="openProject('rakshak')">
+            <div class="card-image" style="background-image: url('assets_rakshak/Rakshak.png');"></div>
+            <div class="card-info"><span class="tag" style="color: #FF3B30;">IoT & Safety</span><h3>Project Rakshak</h3><p>Automatic accident detection.</p></div>
+        </div>
+        <div class="card" onclick="openProject('pawlove')">
+            <div class="card-image" style="background-image: url('assets_pawlove/paw love_front page.png');"></div>
+            <div class="card-info"><span class="tag" style="color: #FF6B6B;">Pet Care App</span><h3>Paw Love</h3><p>Companion app for pet owners.</p></div>
+        </div>
+    </section>
+
+    <div id="vreshcoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeProject('vreshco')">&times;</span>
+            <div class="modal-header"><h2 style="color: #FF4D00;">Vreshco Footwear</h2></div>
+            <div class="gallery-container">
+                <img src="assets_vreshco/div.png"><img src="assets_vreshco/Log in.png"><img src="assets_vreshco/product page.png"><img src="assets_vreshco/My Cart.png"><img src="assets_vreshco/Payment.png"><img src="assets_vreshco/orders.png"><img src="assets_vreshco/Profile page.png">
+            </div>
+            <div class="figma-link-container"><a href="https://www.figma.com/design/vWXvBIqEM29QnvWxwQTz5o/Vreshco_Footwear?node-id=0-1&t=qgS8hoXdtvD8tg2d-1" target="_blank" class="figma-btn">View Figma Prototype →</a></div>
+        </div>
+    </div>
+
+    <div id="cafeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeProject('cafe')">&times;</span>
+            <div class="modal-header"><h2 style="color: #00D1FF;">Cafe Cruiser</h2></div>
+            <div class="gallery-container">
+                <img src="assets_cafecruiser/Home.png"><img src="assets_cafecruiser/Login.png"><img src="assets_cafecruiser/Our vehicles.png"><img src="assets_cafecruiser/Media.png"><img src="assets_cafecruiser/About us.png"><img src="assets_cafecruiser/Contact us.png">
+            </div>
+            <div class="figma-link-container"><a href="https://www.figma.com/design/eyNNDMrvqNvI6WBvOv6inJ/Cafe-cruiser?node-id=0-1&t=Vsxpt9Lk5xUFCXRS-1" target="_blank" class="figma-btn">View Figma Prototype →</a></div>
+        </div>
+    </div>
+
+    <div id="investModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeProject('invest')">&times;</span>
+            <div class="modal-header"><h2>Invest++ Platform</h2></div>
+            <div class="gallery-container">
+                <img src="assets/Screen 1.png"><img src="assets/Login.png"><img src="assets/Learn.png"><img src="assets/Games.png"><img src="assets/Talk to the expert.png"><img src="assets/Meet our Financial Experts.png"><img src="assets/Blogs.png"><img src="assets/Testimonials.png"><img src="assets/FAQ.png"><img src="assets/Contact Us.png">
+            </div>
+            <div class="figma-link-container"><a href="https://www.figma.com/design/Kfh5Ejb3xpdlX54pP6GTKz/Invest--?node-id=0-1&t=igSFIvBAlgWV5mDK-1" target="_blank" class="figma-btn">View Figma Prototype →</a></div>
+        </div>
+    </div>
+
+    <div id="rakshakModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeProject('rakshak')">&times;</span>
+            <div class="modal-header"><h2 style="color: #FF3B30;">Project Rakshak</h2></div>
+            <div class="gallery-container">
+                <img src="assets_rakshak/Landing page.png"><img src="assets_rakshak/login_web.png">
+                <img src="assets_rakshak/user log in.png"><img src="assets_rakshak/our services.png"><img src="assets_rakshak/emergency.png"><img src="assets_rakshak/Alert notification (user).png"><img src="assets_rakshak/accident reporting.png"><img src="assets_rakshak/page.png">
+            </div>
+            <div class="figma-link-container"><a href="https://www.figma.com/design/shtMoM7JHsxUjuQfzaMDK2/Rakshak-final?node-id=1-1183&t=34l2JyIHzAVDkN9d-1" target="_blank" class="figma-btn">View Figma Prototype →</a></div>
+        </div>
+    </div>
+
+    <div id="pawloveModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeProject('pawlove')">&times;</span>
+            <div class="modal-header"><h2 style="color: #FF6B6B;">Paw Love</h2></div>
+            <div class="gallery-container">
+                <img src="assets_pawlove/paw love_front page.png"><img src="assets_pawlove/signup.png"><img src="assets_pawlove/login.png"><img src="assets_pawlove/profile.png"><img src="assets_pawlove/profile 1.png">
+            </div>
+            <div class="figma-link-container"><a href="https://www.figma.com/design/Gk5Z3MnG5cbkfRzVdhkZQs/Paw-love?node-id=0-626&t=fWqQXtMfjaBo6xxM-1" target="_blank" class="figma-btn">View Figma Prototype →</a></div>
+        </div>
+    </div>
+
+    <script>
+        function openProject(projectId) {
+            document.getElementById(projectId + 'Modal').style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+        function closeProject(projectId) {
+            document.getElementById(projectId + 'Modal').style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+    </script>
+</body>
+</html>
